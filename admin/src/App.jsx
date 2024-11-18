@@ -30,6 +30,7 @@ const App = () => {
         <Sidebar />
         <div className='w-[70%] mx-auto ml-[max(5vw, 25px)] my-8 text-gray-600 text-base'>
          <Routes>
+         <Route path='/' element={<h1 className='text-3xl font-bold flex items-center justify-center '>Welcome to Admin Panel</h1>} />
           <Route path='/add' element={<Add token={token}/>} />
           <Route path='/list' element={<List token={token}/>} />
          </Routes>
